@@ -40,12 +40,6 @@ A full-stack **note-taking application** built with **React.js**, **Node.js**, a
 
 ---
 
-## 📸 Screenshots
-
-> _Add your app screenshots here if you'd like_
-
----
-
 ## 🔐 Environment Variables
 
 ### Backend `.env`
