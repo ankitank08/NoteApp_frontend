@@ -1,53 +1,70 @@
-# 📝 Note App
+# 📝 NoteApp
 
-A full-stack **note-taking application** built with **React.js**, **Node.js**, and **MongoDB**, featuring **OTP-based authentication**, **Google login**, and fully mobile-responsive design.
+A full-stack note-taking application with Google Sign-In and OTP-based signup.
 
----
+## 🔧 Tech Stack
 
-## 🚀 Live Demo
-
-- 🔗 Frontend: [https://noteapp-frontend.onrender.com](https://noteapp-frontend.onrender.com)
-- 🔗 Backend API: [https://noteapp-tz9a.onrender.com](https://noteapp-tz9a.onrender.com)
-
----
-
-## ✨ Features
-
-- ✅ Signup & Login using Email + OTP
-- ✅ Google Authentication
-- ✅ Create, Read, Update, Delete Notes
-- ✅ JWT-based protected routes
-- ✅ Mobile-responsive UI using Tailwind CSS
-- ✅ Email service via Gmail + Nodemailer
+- Frontend: React (Vite) + Tailwind CSS
+- Backend: Node.js + Express + MongoDB
+- Auth: Google OAuth + OTP Login
+- Deployment: Render
 
 ---
 
-## 🛠 Tech Stack
+## 🚀 Getting Started
 
-### Frontend:
-- React.js (Vite)
-- Tailwind CSS
-- Axios
-- React Router
-- Google OAuth
+### 1. Clone the repository
 
-### Backend:
-- Node.js (Express)
-- MongoDB (with Mongoose)
-- JWT Authentication
-- Nodemailer (OTP via Gmail)
-- Google Auth Library
+```
+git clone https://github.com/ankitank08/NoteApp.git
+cd NoteApp
+```
 
----
+## 🔨 Frontend Setup
+```
+cd frontend
+npm install
 
-## 🔐 Environment Variables
+```
 
-### Backend `.env`
+## ➕ Add .env file in /frontend
+```
+VITE_BACKEND_URL=https://noteapp-tz9a.onrender.com
+VITE_GOOGLE_CLIENT_ID=your_google_client_id_here
 
-```env
+```
+
+## ▶️ Run Frontend Locally
+```
+npm run dev
+
+```
+
+## 🔧 Backend Setup
+```
+cd backend
+npm install
+
+```
+## ➕ Add .env file in /backend
+```
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
+MONGO_URI=your_mongodb_connection_uri
 JWT_SECRET=your_jwt_secret
-EMAIL_USER=your_gmail
-EMAIL_PASS=your_gmail_app_password
-GOOGLE_CLIENT_ID=your_google_client_id
+
+```
+## ▶️ Run Backend Locally
+```
+node index.js
+
+```
+## ✅ Features
+```
+Signup with OTP
+Login with Google
+Create, read, and manage notes
+Protected routes using JWT
+Fully responsive UI
+
+```
+
