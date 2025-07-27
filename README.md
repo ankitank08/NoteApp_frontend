@@ -4,9 +4,7 @@ A full-stack note-taking application with Google Sign-In and OTP-based signup.
 
 ## 🌐 Live Demo
 ```
-🔗 Frontend: https://noteapp-frontend-vqid.onrender.com
-
-🔗 Backend: https://noteapp-tz9a.onrender.com
+ https://noteapp-frontend-vqid.onrender.com
 ```
 
 ## 🔧 Tech Stack
