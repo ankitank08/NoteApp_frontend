@@ -11,10 +11,13 @@ export default function Login() {
   const login = useGoogleLogin({
     onSuccess: async (tokenResponse) => {
       try {
-        const res = await axios.post("http://localhost:5000/api/auth/google-login", {
-          tokenId: tokenResponse.access_token,
-          name: name,
-        });
+        const res = await axios.post(
+          `${import.meta.env.VITE_BACKEND_URL}/api/auth/google-login`,
+          {
+            tokenId: tokenResponse.access_token,
+            name: name,
+          }
+        );
 
         localStorage.setItem("token", res.data.token);
         navigate("/dashboard");
@@ -49,7 +52,10 @@ export default function Login() {
       {message && <p className="mt-3 text-red-500 text-sm">{message}</p>}
 
       <p className="mt-4 text-sm text-center">
-        Or <a href="/" className="text-blue-600 underline">Signup Using OTP</a>
+        Or{" "}
+        <a href="/" className="text-blue-600 underline">
+          Signup Using OTP
+        </a>
       </p>
     </div>
   );
